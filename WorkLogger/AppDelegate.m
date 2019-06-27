@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "AZTimerViewController.h"
+#import "AZLogTableViewController.h"
+#import "AZStatsViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +19,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    NSLog(@"launching...");
+    AZLogTableViewController *logTable = [[AZLogTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController* log = [[UINavigationController alloc] initWithRootViewController: logTable];
+    AZTimerViewController* timer = [[AZTimerViewController alloc] init];
+    AZStatsViewController* stats = [[AZStatsViewController alloc] init];
+    
+    UITabBarController* tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[log, timer, stats];
+    tabBarController.selectedViewController = timer;
+    
+    UIWindow* window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    window.rootViewController = tabBarController;
+    window.backgroundColor = [UIColor whiteColor];
+    self.window = window;
+    [window makeKeyAndVisible];
     return YES;
 }
 

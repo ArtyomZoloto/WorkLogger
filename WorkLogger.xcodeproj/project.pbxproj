@@ -14,6 +14,10 @@
 		161DB08522C3D59B0057C84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161DB08422C3D59B0057C84C /* Assets.xcassets */; };
 		161DB08822C3D59B0057C84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161DB08622C3D59B0057C84C /* LaunchScreen.storyboard */; };
 		161DB08B22C3D59B0057C84C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 161DB08A22C3D59B0057C84C /* main.m */; };
+		161DB09322C4CCD20057C84C /* AZTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161DB09222C4CCD20057C84C /* AZTimerViewController.m */; };
+		161DB09622C4D0870057C84C /* AZLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161DB09522C4D0870057C84C /* AZLogTableViewController.m */; };
+		161DB09922C4D4680057C84C /* AZStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161DB09822C4D4680057C84C /* AZStatsViewController.m */; };
+		161DB09D22C4E70C0057C84C /* AZIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 161DB09C22C4E70C0057C84C /* AZIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		161DB08722C3D59B0057C84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		161DB08922C3D59B0057C84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161DB08A22C3D59B0057C84C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		161DB09122C4CCD20057C84C /* AZTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZTimerViewController.h; sourceTree = "<group>"; };
+		161DB09222C4CCD20057C84C /* AZTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZTimerViewController.m; sourceTree = "<group>"; };
+		161DB09422C4D0870057C84C /* AZLogTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZLogTableViewController.h; sourceTree = "<group>"; };
+		161DB09522C4D0870057C84C /* AZLogTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZLogTableViewController.m; sourceTree = "<group>"; };
+		161DB09722C4D4680057C84C /* AZStatsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZStatsViewController.h; sourceTree = "<group>"; };
+		161DB09822C4D4680057C84C /* AZStatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZStatsViewController.m; sourceTree = "<group>"; };
+		161DB09B22C4E70C0057C84C /* AZIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AZIndicator.h; sourceTree = "<group>"; };
+		161DB09C22C4E70C0057C84C /* AZIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZIndicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 		161DB07722C3D59A0057C84C /* WorkLogger */ = {
 			isa = PBXGroup;
 			children = (
+				161DB09A22C4D5590057C84C /* model */,
 				161DB07822C3D59A0057C84C /* AppDelegate.h */,
 				161DB07922C3D59A0057C84C /* AppDelegate.m */,
 				161DB07B22C3D59A0057C84C /* ViewController.h */,
@@ -70,8 +83,23 @@
 				161DB08922C3D59B0057C84C /* Info.plist */,
 				161DB08A22C3D59B0057C84C /* main.m */,
 				161DB08122C3D59A0057C84C /* WorkLogger.xcdatamodeld */,
+				161DB09122C4CCD20057C84C /* AZTimerViewController.h */,
+				161DB09222C4CCD20057C84C /* AZTimerViewController.m */,
+				161DB09422C4D0870057C84C /* AZLogTableViewController.h */,
+				161DB09522C4D0870057C84C /* AZLogTableViewController.m */,
+				161DB09722C4D4680057C84C /* AZStatsViewController.h */,
+				161DB09822C4D4680057C84C /* AZStatsViewController.m */,
+				161DB09B22C4E70C0057C84C /* AZIndicator.h */,
+				161DB09C22C4E70C0057C84C /* AZIndicator.m */,
 			);
 			path = WorkLogger;
+			sourceTree = "<group>";
+		};
+		161DB09A22C4D5590057C84C /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161DB09D22C4E70C0057C84C /* AZIndicator.m in Sources */,
+				161DB09322C4CCD20057C84C /* AZTimerViewController.m in Sources */,
 				161DB07D22C3D59A0057C84C /* ViewController.m in Sources */,
 				161DB08322C3D59A0057C84C /* WorkLogger.xcdatamodeld in Sources */,
+				161DB09622C4D0870057C84C /* AZLogTableViewController.m in Sources */,
 				161DB08B22C3D59B0057C84C /* main.m in Sources */,
+				161DB09922C4D4680057C84C /* AZStatsViewController.m in Sources */,
 				161DB07A22C3D59A0057C84C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
